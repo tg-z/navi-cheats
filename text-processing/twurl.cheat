@@ -1,0 +1,11 @@
+% twitter, json 
+
+# get timeline using twurl 
+twurl alias h /1.1/statuses/home_timeline.json | jq '.'
+twurl h 
+twurl /1.1/statuses/home_timeline.json | jq '.'
+
+# posting a tweet using twurl
+twurl alias tweet /1.1/statuses/update.json
+twurl tweet -d "status=bored xd"
+
