@@ -10,3 +10,4 @@ emuto -c 'map ($ => $ { id name full_name owner { login } description html_url h
 # outputs recent web-clip issues using curl  
 curl https://api.github.com/repos/tg-z/web-clip/issues |\
 emuto -c 'map ($ => $ { number title state asignee { labels { name color description } } body id created_at updated_at } )' | jq '.'
+
