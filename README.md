@@ -1,3 +1,12 @@
-### cheats for these programs 
-| tool  | description  | :star:  |
-| fzf   |           |           | 
+### cheats to add for these programs 
+- fzf 
+- brew
+- git
+- jello
+- jl
+- newsboat
+- bash
+- zsh
+- pass/gopass
+- curl/httpie/kurly
+- postgress 
