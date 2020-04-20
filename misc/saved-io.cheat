@@ -1,0 +1,4 @@
+% cli 
+
+# add new url to saved.io 
+saved-io addmark --title "article" --url "https://github.com"  

@@ -1,0 +1,4 @@
+% js, cli
+
+# show node_modules folders in ~/repos 
+find . -name "node_modules" -type d -prune -print | xargs du -chs 
