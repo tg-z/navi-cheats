@@ -35,8 +35,3 @@ basename() {
   printf '%s\n' "${tmp:-/}"
 }
 
-
-for file in ~/repos/navi-cheats/*.cheat; do
-  printf '%s\n' "$file"
-done
-
