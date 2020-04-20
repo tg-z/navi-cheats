@@ -3,9 +3,9 @@
 # neat usage
 # neat 
 
+fd . -e cheat -t f -d 2 
 neat () {
   echo "cheats:" 
-  fd . -e cheat -t f -d 2 
 }
 
 
@@ -40,20 +40,3 @@ for file in ~/repos/navi-cheats/*.cheat; do
   printf '%s\n' "$file"
 done
 
-usage()
-{
-  cat <<EOF
-  neat
-  description: utility to manage navi cheat files
-  usage: neat [flag] [cheat] or neat [flag]
-  -t  show tags associated with cheat file
-  -s  Shorten the URL
-  -e  Expand a shortened URL
-  -r  search tags + files
-  -h  show this help text 
-  -v  get the tool version
-  example:
-  input:  bash neat.sh -t brew
-  output: brew tags: osx, cli
-  EOF
-}
