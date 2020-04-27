@@ -24,6 +24,13 @@ curl cheat.sh/<term>
 # show dancing parrot
 curl parrot.live 
 
+# post data using curl 
+curl -d password=<password> <url>
+
+# auth/data 
+curl -u user:pass -d status="<message>" <url>
+curl -u user:pass -d status="new tweet lol" https://twitter.com/statuses/update.xml
+
 
 
 
