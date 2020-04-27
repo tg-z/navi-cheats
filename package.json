@@ -25,7 +25,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "echo '# navi-cheats [![status](https://travis-ci.com/tg-z/navi-cheats.svg?branch=master)]' > README.md && mdtable cheats.csv >> README.md"
+      "pre-push": "echo '# navi-cheats [![status](https://travis-ci.com/tg-z/navi-cheats.svg?)](https://github.com/tg-z/navi-cheats)' > README.md && mdtable cheats.csv >> README.md"
     }
   }
 }

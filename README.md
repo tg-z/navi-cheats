@@ -1,4 +1,4 @@
-# navi-cheats https://travis-ci.com/tg-z/navi-cheats.svg?branch=master
+# navi-cheats [![status](https://travis-ci.com/tg-z/navi-cheats.svg?branch=master)]
 | json  | pkg   | misc     | shell | db       |
 |-------|-------|----------|-------|----------|
 | jq    | brew  | twurl    | bash  | sql      |
