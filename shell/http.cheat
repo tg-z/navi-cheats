@@ -1,0 +1,23 @@
+% cli, http
+
+# download a url to a file 
+http -d <url>
+
+# send form-encoded data 
+http -f <url> <key>:'<value>' <key>@'<value>'
+
+# send a json object 
+http <url> <key>='<value>'
+
+# specify an http method 
+http HEAD <url> 
+
+# include an http header 
+http <url> X-<header>:<value>
+
+# pass a user name and password for server authentication
+http -a <username>:<password> <url> 
+
+# specify raw request body via stdin 
+cat <file> | http PUT <url> 
+

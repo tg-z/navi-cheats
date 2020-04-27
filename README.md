@@ -6,4 +6,4 @@
 | jc    | cargo | mdtable  | http  |          |
 | jello | nix   | git      | fzf   |          |
 | emuto | pip   | pass     | zsh   |          |
-|       | pipx  |          | entr  |          |
+|       | pipx  | go-t     | entr  |          |
