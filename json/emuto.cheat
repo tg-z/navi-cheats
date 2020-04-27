@@ -1,5 +1,20 @@
 % json, text, cli 
 
+# get number of items in a json file 
+curl <file>.json | emuto 'length'
+
+# get your karma on hacker news 
+curl https://hacker-news.firebaseio.com/v0/user/parasite.json -s | emuto '$.karma'
+
+# convert a commands output to json 
+ls | emuto -i=raw '$[0:-1]'
+
+# see number of npm dependencies 
+cat package.json | emuto -c '$.dependencies | keys | length'
+
+# list available scripts in package.json 
+cat package.json | emuto -c '$.scripts | keys | join " · "' 
+
 # json from github's api-v3 
 curl https://api.github.com/emojis | jq '.'
 
