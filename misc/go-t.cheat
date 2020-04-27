@@ -1,0 +1,85 @@
+% cli, twitter 
+
+# initiate go-t config files 
+t init 
+
+# add an account 
+t accounts add <user>
+
+# send a tweet 
+t status update "<message>" 
+
+# send a tweet from stdin 
+echo "<message>" | t status update -f -
+
+# send a tweet and like it after posting it 
+echo "<message>" | t status update -v -l -y -f - | awk '{print $1}' | t fav like -y -f -
+
+# delete a tweet 
+t status rm <tweet id>
+
+# retweet a tweet 
+t status retweet <tweet id> 
+
+# show all retweets of a tweet 
+t status retweets <tweet id> 
+
+# like a tweet 
+t favorites like <tweet id> 
+
+# dislike a tweet 
+t favorites dislike <tweet id> 
+
+# follow a user 
+t friendships follow @<user id>
+
+# show a users likes as a list 
+t favorites list @<user id>
+
+# like the last 4 tweets of a user 
+t favorites list @<user id> -l -c 4 | awk '{print $1}' | xargs -I tweet t favorites like -y tweet
+
+# show most recently updated timeline 
+t timeline 
+
+# show timeline as list, sorted by favorites count, descending 
+t timeline -l --sort likes,asc 
+
+# show latest twitter mentions 
+t timeline mentions 
+
+# favorite last 10 tweets that mention you 
+t timeline mentions -c 10 -l | awk '{print $1}' | xargs -I tweet t fav like tweet
+
+# show latest retweets 
+t timeline retweets 
+
+# show 50 latest tweets of a users timeline as a list 
+t timeline user @<user id> -l -c 50 
+
+# search for term in your timeline 
+t timeline -l | grep @<user id>
+
+# get user information 
+t users whois <user id>
+
+# search for users with a <term> in their name + output json 
+t users search "<term>" -o json 
+
+# list a users followers 
+t followers @<user id>
+
+# list a users followers as list, sorted by followers recent tweet activty 
+t followers @<user id> -l --sort tweeted
+
+# unfollow the last 10 persons you are following, who tweeted less then all your other
+followers 
+t followers @<user id> -l --sort tweeted | awk '{print $1}' | xargs -I user t users unfollow user -y 
+
+# list all followers of user as list, sorted by follower's registration date
+t followers @<user id> -l --sort tweeted 
+
+
+
+
+
