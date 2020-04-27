@@ -22,5 +22,11 @@
   "homepage": "https://github.com/tg-z/navi-cheats#readme",
   "devDependencies": {
     "husky": "^4.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "bash ./neat.sh",
+      "pre-push": "echo '# navi-cheats' > README.md && mdtable cheats.csv >> README.md"
+    }
   }
 }
