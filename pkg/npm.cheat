@@ -1,4 +1,28 @@
-% js, cli
+% js, cli, pkg 
 
 # show node_modules folders in ~/repos 
 find . -name "node_modules" -type d -prune -print | xargs du -chs 
+
+# interactively create a package.json file
+npm init
+
+# download all the packages listed as dependencies in package.json:
+npm install
+
+# download a specific version of a package and add it to the list of dependencies in package.json
+npm install <module>@<version>
+
+# Download a package and add it to the list of dev dependencies in package.json:
+npm install <module> --save-dev
+
+# Download a package and install it globally:
+npm install -g <module>
+
+# Uninstall a package and remove it from the list of dependencies in package.json:
+npm uninstall <module>
+
+# Print a tree of locally-installed dependencies:
+npm list
+
+# List top-level globally installed modules:
+npm list -g --depth=0

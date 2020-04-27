@@ -1,0 +1,22 @@
+% pkg, cli 
+
+# install a package
+pip install <package_name>
+
+# install a specific version of a package
+pip install <package_name>==<package_version>
+
+# upgrade a package
+pip install -U <package_name>
+
+# uninstall a package
+pip uninstall <package_name>
+
+# save installed packages to file
+pip freeze > requirements.txt
+
+# install packages from file
+pip install -r requirements.txt
+
+# show installed package info
+pip show <package_name>

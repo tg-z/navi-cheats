@@ -1,0 +1,52 @@
+% pkg, cli
+
+# install a binary using nix package manager 
+nix-env --install <pkg>
+
+# uninstall a binary using nix package manager 
+nix-env --uninstall <pkg> 
+
+# safely remove + uninstall unused packages 
+nix-collect-garbage 
+
+# view all available packages in the channel 
+nix-env -qa 
+
+# install a package from the channel 
+nix-env -i <pkg>
+
+# uninstall a package 
+nix-env -e <pkg>
+
+# upgrade a package 
+nix-env -u <pkg> 
+
+# show upgradeable packages 
+nix-env -u --dry-run
+
+# testing a package without installing it 
+nix-shell -p <pkg>
+
+# keeping up to date with the channel 
+nix-channel --update <nixpkgs> 
+
+# updating pkgs from user channel if theres a newer version available
+nix-env -u '*' 
+
+# to revert back to a previous package version 
+nix-env --rollback 
+
+# garbage collector to get rid of unused packages 
+nix-collect-garbage -d 
+
+# view package status whether or not it's installed 
+nix-env -qas
+
+# show dead pkgs to delete 
+nix-store --gc --print-dead 
+
+# show live pkgs 
+nix-store --gc --print-live 
+
+
+
