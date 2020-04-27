@@ -1,0 +1,29 @@
+% cli 
+
+# get the weather 
+curl wttr.in
+
+# get ip address 
+curl ifconfig.co 
+
+# get your location based off country
+curl ifconfig.co/<country>
+
+# get your location by city 
+curl ifconfig.co/<city>
+
+# get tech news 
+curl getnews.tech 
+
+# search tech news 
+curl getnews.tech/<topic>+<topic>
+
+# get cheat sheets
+curl cheat.sh/<term>
+
+# show dancing parrot
+curl parrot.live 
+
+
+
+
