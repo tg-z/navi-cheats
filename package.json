@@ -25,7 +25,6 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "bash ./neat.sh",
       "pre-push": "echo '# navi-cheats' > README.md && mdtable cheats.csv >> README.md"
     }
   }

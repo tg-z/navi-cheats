@@ -1,10 +1,9 @@
-# programs 
-
-| json  | pkg   | misc     | shell | cli | db       |   |
-|-------|-------|----------|-------|-----|----------|---|
-| emuto | brew  | twurl    | bash  |     | sql      |   |
-| jello | npm   | saved-io | curl  |     | postgres |   |
-| jl    | cargo |          | http  |     |          |   |
-| jc    | nix   | git      | fzf   |     |          |   |
-|       | pip   | pass     | zsh   |     |          |   |
-|       | pipx  |          |       |     |          |   |
+# navi-cheats
+| json  | pkg   | misc     | shell | db       |
+|-------|-------|----------|-------|----------|
+| jq    | brew  | twurl    | bash  | sql      |
+| jl    | npm   | saved-io | curl  | postgres |
+| jc    | cargo | mdtable  | http  |          |
+| jello | nix   | git      | fzf   |          |
+| emuto | pip   | pass     | zsh   |          |
+|       | pipx  |          | entr  |          |
