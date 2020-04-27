@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/tg-z/navi-cheats/issues"
   },
-  "homepage": "https://github.com/tg-z/navi-cheats#readme"
+  "homepage": "https://github.com/tg-z/navi-cheats#readme",
+  "devDependencies": {
+    "husky": "^4.2.5"
+  }
 }
