@@ -1,0 +1,17 @@
+% rsync
+
+# files from server (accepts * and regular expressions)
+rsync -avzPs '<user>@<server>:<folder>/*' .
+
+# files from server with special port (accepts * and regular expressions)
+rsync -e 'ssh -p <port>' -avzPs '<user>@<server>:<folder>/*' .
+
+# files from server with special port and special key (accepts * and regular expressions)
+rsync -e 'ssh -p <port> -i <sshkey>' -avzPs '<user>@<server>:<folder>/*' .
+
+# files from server with special key (accepts * and regular expressions)
+rsync -e 'ssh -i <sshkey>' -avzPs '<user>@<server>:<folder>/*' .
+
+$ user : echo -e "$(whoami)\nroot"
+$ sshkey : ls ~/.ssh | grep -v known_hosts | grep -v config
+$ server : cat /etc/hosts | cut -f2 -d' '
