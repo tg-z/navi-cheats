@@ -1,0 +1,7 @@
+% cron, 
+
+# list cron jobs
+crontab -l
+
+# edit cron job file 
+crontab -e

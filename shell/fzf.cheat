@@ -1,0 +1,6 @@
+% cli 
+
+# start finder with a given query
+fzf -q "<query>" 
+
+# 
