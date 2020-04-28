@@ -1,0 +1,10 @@
+% bash, cli, oneliners
+
+# find all bloated "node_modules" in current directory
+find . -name "node_modules" -type d -prune -print | xargs du -chs
+
+# show symlinks and their origin 
+ls -la | grep "\->" | awk '{print $9 " " $10 " " $11}' 
+
+# count number of symlinks in current directory 
+ls -la | grep "\->" | awk '{print $9 " " $10 " " $11}' | wc -l 
