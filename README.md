@@ -3,7 +3,7 @@
 |-------|-------|----------|-------|----------|
 | jq    | brew  | twurl    | bash  | sql      |
 | jl    | npm   | saved-io | curl  | postgres |
-| jc    | cargo | mdtable  | http  |          |
+| jc    | cargo | mdtable  | http  | mysql    |
 | jello | nix   | git      | fzf   |          |
 | emuto | pip   | pass     | zsh   |          |
 |       | pipx  | go-t     | entr  |          |
