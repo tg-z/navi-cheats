@@ -1,4 +1,4 @@
-% pkg, cli
+% pkg, cli, nix
 
 # install a binary using nix package manager 
 nix-env --install <pkg>
@@ -47,6 +47,3 @@ nix-store --gc --print-dead
 
 # show live pkgs 
 nix-store --gc --print-live 
-
-
-
