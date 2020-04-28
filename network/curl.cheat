@@ -1,4 +1,4 @@
-% cli 
+% cli, http
 
 # get the weather 
 curl wttr.in
