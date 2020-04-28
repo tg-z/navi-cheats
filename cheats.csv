@@ -5,3 +5,4 @@ jc, cargo, mdtable, entr, mysql, network
 jello, nix, git, fzf,,openssl
 emuto, pip, pass, zsh,, rsync
 , pipx, go-t,,, ssh 
+,, ffmpeg,,, docker
