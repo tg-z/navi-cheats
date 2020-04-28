@@ -1,4 +1,4 @@
-% rsync
+% rsync, cli, http
 
 # files from server (accepts * and regular expressions)
 rsync -avzPs '<user>@<server>:<folder>/*' .
