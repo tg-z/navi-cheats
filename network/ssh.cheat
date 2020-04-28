@@ -1,0 +1,17 @@
+% ssh
+
+# login to a server and forward to ssh key (dangerous but usefull for bastion hosts)
+ssh -A <user>@<server>
+
+# login to a server with a key
+ssh -i <sshkey> <user>@<server>
+
+# login to a server with a port
+ssh -p <port> <user>@<server>
+
+# login to a server with a key and port
+ssh -i <sshkey> -p <port> <user>@<server>
+
+$ user : echo -e "$(whoami)\nroot"
+$ sshkey : find ~/.ssh | grep -v known_hosts | grep -v config
+$ server : cat /etc/hosts | cut -f2 -d' '
