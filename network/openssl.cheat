@@ -1,4 +1,4 @@
-% openssl
+% openssl, cli, http
 
 # Download certificat from server
 echo | \
