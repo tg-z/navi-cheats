@@ -1,4 +1,4 @@
-% pkg, cli 
+% pkg, cli, rs
 
 # to start a new project
 cargo new <project> --bin     
