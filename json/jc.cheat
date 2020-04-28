@@ -1,1 +1,13 @@
 % json, cli
+
+# pretty print a command 
+jc -p <command> 
+
+# list installed pip packages in json 
+jc -p pip list 
+
+# get pip package names 
+jc -p pip list | jq '.[].package' 
+
+# get total number of installed packages 
+jc -p pip list | jq '.[].package' | wc -l 
