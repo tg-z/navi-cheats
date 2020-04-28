@@ -1,4 +1,4 @@
-% pkg, cli 
+% pkg, cli, py
 
 # install a package
 pip install <package_name>
