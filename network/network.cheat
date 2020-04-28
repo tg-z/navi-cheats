@@ -1,4 +1,4 @@
-% network
+% network, cli, http
 
 # Kill a process running on a given port
 lsof -i :<port> | awk '{l=$2} END {print l}' | xargs kill
