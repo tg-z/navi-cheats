@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# neat usage
 # neat 
+# neat usage: 
 
 fd . -e cheat -t f -d 2 
 neat () {
@@ -12,7 +12,7 @@ neat () {
 count() {
   # Usage: count /path/to/dir/*
   #        count /path/to/dir/*/
-  # count ~/repos/navi-cheats/*.cheat
+  # count ~/repos/navi-cheats/*/*.cheat
   printf '%s\n' "$#"
 }
 head() {
@@ -24,14 +24,5 @@ head() {
 list_cheats() {
   echo $NEAT_CHEAT_DATA | tr '|' '\n' | cut -d ';' -f 1
 }
-basename() {
-  # Usage: basename "path" ["suffix"]
-  local tmp
-  
-  tmp=${1%"${1##*[!/]}"}
-  tmp=${tmp##*/}
-  tmp=${tmp%"${2/"$tmp"}"}
-  
-  printf '%s\n' "${tmp:-/}"
-}
+
 
