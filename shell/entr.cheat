@@ -1,0 +1,26 @@
+% cli, shell
+
+# rebuild + make project when files change
+ls | entr make
+
+ # rebuild project and run tests if the build was successful
+ ls | entr -s 'make && make test'
+ 
+ # live reload web project 
+ ls *.css *.html | entr reload-browser Firefox
+ 
+ # exit, restart, and refresh server 
+ ls *.rb | entr -r ruby main.rb
+
+# clear the screen before running tests
+ls -d * | entr -c ./test.sh
+
+# a quick way to refer to the first file that changed
+; when a single file is listed this is a handy way to avoid typing a pathname twice
+ls *.sql | entr psql -f /_
+
+# watch new files when added to directory
+$ while true; do
+> ls -d src/*.py | entr -d ./setup.py
+> done
+
