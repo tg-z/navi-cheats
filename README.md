@@ -8,4 +8,4 @@
 | emuto | pip   | pass     | zsh   |          | rsync   |            |
 |       | pipx  | go-t     |       |          | ssh     |            |
 |       |       | ffmpeg   |       |          | docker  |            |
-|       |       |          |       |          | wget    |            |
+|       |       | gisty    |       |          | wget    |            |
