@@ -26,3 +26,15 @@ youtube-dl --sub-lang en --write-sub <url>
 
 # search youtube-dl help text 
 youtube-dl --help | grep extract-audio
+
+# Download single entry
+youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 <url>
+
+# Download playlist
+youtube-dl -ict --yes-playlist --extract-audio --audio-format mp3 --audio-quality 0 <url> 
+
+# Download playlist, --download-archive downloaded.txt add successfully downloaded files into downloaded.txt
+youtube-dl --download-archive downloaded.txt --no-overwrites -ict --yes-playlist --extract-audio --audio-format mp3 --audio-quality 0 --socket-timeout 5 <url>
+
+# Retry until success, no -i option
+while ! youtube-dl --download-archive downloaded.txt --no-overwrites -ct --yes-playlist --extract-audio --audio-format mp3 --audio-quality 0 --socket-timeout 5 <YT_PlayList_URL>; do echo DISCONNECTED; sleep 5; done
