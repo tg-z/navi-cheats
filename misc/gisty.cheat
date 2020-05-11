@@ -1,0 +1,29 @@
+% cli, git, gist
+
+# show help 
+gisty help 
+
+# post screencapture
+gisty gyast 
+
+# sync remote gist. delete local gist if remote was deleted 
+gisty sync_delete
+
+# show gist info 
+gisty about 
+
+# post new private gist 
+gisty private_post <file1> <file2>
+
+# show local gist
+gisty list
+
+# pull all new gist
+gisty pull_all
+
+# post new gists
+gisty post <file1> <file2>
+
+# sync remote gist (clone all remote gist) 
+gisty sync 
+
