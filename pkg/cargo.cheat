@@ -1,7 +1,9 @@
 % pkg, cli, rs
 
-# to start a new project
-cargo new <project> --bin     
+# to start a new project 
+cargo new <project> --bin 
+
+# start new project to using as a library
 cargo new <project> --lib     
 
 # build a project without optimizations (in debug mode)
