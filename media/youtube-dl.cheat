@@ -23,3 +23,6 @@ youtube-dl --list-subs <url>
 
 # Download a particular language's subtitles along with the video:
 youtube-dl --sub-lang en --write-sub <url>
+
+# search youtube-dl help text 
+youtube-dl --help | grep extract-audio
