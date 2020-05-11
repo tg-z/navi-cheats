@@ -1,0 +1,25 @@
+% youtube, media, video
+
+# Download a video or playlist:
+youtube-dl <url>
+
+# List all formats that a video or playlist is available in:
+youtube-dl --list-formats <url>
+
+# Download a video or playlist at a specific quality:
+youtube-dl --format "best[height<=480]" <url>
+
+# Download the audio from a video and convert it to an MP3:
+youtube-dl -x --audio-format mp3 <url>
+
+# Download the best quality audio and video and merge them:
+youtube-dl -f bestvideo+bestaudio <url>
+
+# Download video(s) as MP4 files with custom filenames:
+youtube-dl --format mp4 -o "%(title)s by %(uploader)s on %(upload_date)s in %(playlist)s.%(ext)s" <url>
+
+# List available subtitles:
+youtube-dl --list-subs <url>
+
+# Download a particular language's subtitles along with the video:
+youtube-dl --sub-lang en --write-sub <url>
