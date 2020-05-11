@@ -1,0 +1,18 @@
+% ffmpeg
+
+# translate
+ffmpeg \
+  -i "<input>" \
+  -filter:v scale=h='min(720\,ih)':w='min(1280\,iw)' \
+  -vcodec libx264 \
+  -preset <preset> \
+  -profile:v <profile> \
+  -acodec aac \
+  -ac 2 \
+  -ar 44100 \
+  "<output>" \
+  -hide_banner
+
+$ input : ls
+$ preset : echo -e "ultrafast\nsuperfast\nveryfast\nfaster\nfast\nmedium\nslow\nslower\nveryslow"
+$ profile : echo -e "baseline\nmain\nhigh"
