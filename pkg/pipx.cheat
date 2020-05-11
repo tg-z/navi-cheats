@@ -1,1 +1,34 @@
 % pkg, py
+
+# install a package 
+pipx install <package>    
+
+# install packages into an existing virtual environment
+pipx inject <package> 
+
+# upgrade a package
+pipx upgrade <package> 
+
+# upgrade all packages. runs pip install -U <pkgname> for each package
+pipx upgrade-all 
+
+# uninstall a package
+pipx uninstall <package>
+
+# uninstall all packages 
+pipx uninstall-all 
+
+# reinstall-all packages
+pipx reinstall-all 
+
+# list installed packages 
+pipx list 
+
+# Download the latest version of a package to a temporary virtual environment, then run an app from it. Also compatible with local `__pypackages__` directory (experimental).
+pipx run <package>
+
+# run pip in an existing pipx managed virtual environment 
+pipx runpip 
+
+# ensure dir where pipx stores apps is on PATH. 
+pipx ensurepath   
