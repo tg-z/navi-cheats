@@ -92,4 +92,3 @@ List customization
 ------------------
 
 Lists can be stylized with the [$FZF_DEFAULT_OPTS](https://github.com/junegunn/fzf#layout) environment variable or similar variables/parameters (please refer to `navi --help`). This way, you can change the [color scheme](https://github.com/junegunn/fzf/wiki/Color-schemes), for example.
-w
