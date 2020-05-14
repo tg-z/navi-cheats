@@ -12,6 +12,31 @@ ssh -p <port> <user>@<server>
 # login to a server with a key and port
 ssh -i <sshkey> -p <port> <user>@<server>
 
+# check whether you're running multiple versions of ssh-agent 
+ps 
+
+# check if ssh-agent is running
+ps -e | grep [s]sh-agent 
+
+# manually start the ssh-agent
+ssh-agent /bin/bash
+
+# list loaded keys from ssh 
+ssh-add -l
+
+# add a key to ssh-agent 
+ssh-add ~/.ssh/<private_key_file>
+
+# remove an ssh key from ssh-agent 
+ssh-add -d ~/.ssh/<private_key_file>
+
+# test an ssh connection 
+ssh -T git@bitbucket.org 
+
+# show details about ssh connection
+ssh -v git@bitbucket.org
+
+
 $ user : echo -e "$(whoami)\nroot"
 $ sshkey : find ~/.ssh | grep -v known_hosts | grep -v config
 $ server : cat /etc/hosts | cut -f2 -d' '
