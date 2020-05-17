@@ -1,0 +1,6 @@
+% finder, filter, cli
+
+# search mac apps 
+fd . '/Applications' -e app -d 2 | peco
+
+# 
