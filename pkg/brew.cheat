@@ -4,7 +4,7 @@
 brew search <pkg> 
 
 # install the latest stable version of a formula (use `--devel` for development versions)
-brew install formula 
+brew install <formula>
 
 # list all installed formulae
 brew list 
@@ -13,7 +13,7 @@ brew list
 brew upgrade <formula>
 
 # fetch the newest version of Linuxbrew and of all formulae from GitHub:
-brew update 
+brew update <pkg>
 
 # show formulae that have a more recent version available:
 brew outdated 
