@@ -3,4 +3,7 @@
 # start finder with a given query
 fzf -q "<query>" 
 
-# 
+# list applications using fzf 
+fd . '/Applications' -t d -e app -d 3 | sd -p '/Applications/' ''  | sd -p ' ' '\' | eval "fzf  --header='[find:app]'" 
+
+# search for 
