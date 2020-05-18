@@ -48,3 +48,17 @@ youtube-dl --date 19700101
 $ # Download only the videos uploaded in the 200x decade
 youtube-dl --dateafter 20000101 --datebefore 20091231
 
+# Always extract audio
+-x
+
+# Do not copy the mtime
+--no-mtime
+
+# Use this proxy
+--proxy 127.0.0.1:3128
+
+# Save all videos under Movies directory in your home directory
+-o ~/Movies/%(title)s.%(ext)s
+
+# Save all videos under mp3 directory in your home directory
+-o ~/mp3/%(title)s.%(ext)s
