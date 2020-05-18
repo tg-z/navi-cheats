@@ -38,3 +38,13 @@ youtube-dl --download-archive downloaded.txt --no-overwrites -ict --yes-playlist
 
 # Retry until success, no -i option
 while ! youtube-dl --download-archive downloaded.txt --no-overwrites -ct --yes-playlist --extract-audio --audio-format mp3 --audio-quality 0 --socket-timeout 5 <YT_PlayList_URL>; do echo DISCONNECTED; sleep 5; done
+
+# Download only the videos uploaded in the last 6 months
+youtube-dl --dateafter now-6months
+
+# Download only the videos uploaded on January 1, 1970
+youtube-dl --date 19700101
+
+$ # Download only the videos uploaded in the 200x decade
+youtube-dl --dateafter 20000101 --datebefore 20091231
+
