@@ -1,0 +1,43 @@
+% pass, cli 
+
+# start a new password store
+pass init 
+
+# start new store in a folder besides ~/.password-store
+pass init -p <folder>
+
+# use git to track a password store
+pass git init 
+
+# list passwords 
+pass ls <subfolder>
+
+# grep password 
+pass grep 
+
+# search for password
+pass search <item> 
+
+# find a password 
+pass find <item>
+
+# show a password 
+pass show <item>
+
+# add a password to password-store
+pass insert <item> 
+
+# edit a password
+pass edit <item>
+
+# remove a password
+pass rm <item>
+
+# move a password 
+pass mv <item> 
+
+# copy a password 
+pass cp <item> 
+
+# generate a password 
+pass generate <item> 
