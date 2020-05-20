@@ -1,0 +1,18 @@
+% json
+
+# ex [1,2,3,4,5,6,7,8,9,10]
+seq 1 10 | jo -a 
+
+# ex
+jo -p name=jo n=17 parser=false
+;{
+;    "name": "jo",
+;    "n": 17,
+;    "parser": false
+;}
+
+# date + time 
+jo time=$(date +%s) dir=$HOME
+
+# list folder contents 
+jo -p -a *
