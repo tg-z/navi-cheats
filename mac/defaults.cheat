@@ -1,0 +1,36 @@
+% mac, defaults, finder 
+
+# make desktop icons visible
+defaults write com.apple.finder CreateDesktop -bool true;killall Finder;say icons visible
+
+# make desktop icons invisible 
+defaults write com.apple.finder CreateDesktop -bool false;killall Finder;say icons hidden
+
+# remove auto-hide dock delay 
+defaults write com.apple.Dock autohide-delay -float 0 && killall Dock
+
+# enable Text Selection in Quick Look Window
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE;killall Finder
+
+# always show hidden files in finder 
+defaults write com.apple.finder AppleShowAllFiles -bool YES && killall Finder
+
+# Change Where Screen Shots Are Saved To
+defaults write com.apple.screencapture location ~/Pictures/Screenshots
+
+# Change the Default Screen Shot Image Type
+defaults write com.apple.screencapture type jpg && killall SystemUIServer
+
+# Always Show the User Library Folder
+chflags nohidden ~/Library/
+
+# Stop Full Names from Copying with Email Addresses in Mac OS X Mail
+defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
+# Make Hidden App Icons Translucent in the Dock
+defaults write com.apple.Dock showhidden -bool YES && killall Dock
+
+# go to default finder icon resource folder 
+cd /System/Library/CoreServices/CoreTypes.bundle/Contents/Resources
+
+
