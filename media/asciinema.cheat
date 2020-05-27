@@ -1,0 +1,24 @@
+% terminal, cli, recorder, video, share
+
+# record a terminal session
+asciinema rec 
+
+# replay terminal session
+asciinema play        
+
+# print full output of terminal session
+asciinema cat 
+
+# upload locally saved terminal session to asciinema.org 
+asciinema upload 
+
+# manage recordings on asciinema.org account
+asciinema auth 
+
+# get help 
+asciinema <command> -h 
+
+# show version 
+asciinema --version 
+
+$ command: {rec,play,cat,upload,auth}
