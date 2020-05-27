@@ -1,4 +1,4 @@
-# navi-cheats ![icon](https://user-images.githubusercontent.com/3226564/65362934-b4432500-dbdf-11e9-8f75-815fbc5cbf8f.png) [![status](https://travis-ci.com/tg-z/navi-cheats.svg?)](https://github.com/tg-z/navi-cheats)
+# navi-cheats <img src="https://user-images.githubusercontent.com/3226564/65362934-b4432500-dbdf-11e9-8f75-815fbc5cbf8f.png" alt="icon" height="28px"/> [![status](https://travis-ci.com/tg-z/navi-cheats.svg?)](https://github.com/tg-z/navi-cheats)
 | media      | mac      | json  | pkg   | misc     | shell | db       | network | iterm2     |
 |------------|----------|-------|-------|----------|-------|----------|---------|------------|
 | ffmpeg     | defaults | jq    | brew  | twurl    | bash  | sql      | curl    | python-api |
