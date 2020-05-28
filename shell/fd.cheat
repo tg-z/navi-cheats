@@ -1,0 +1,7 @@
+% fd, find, search
+
+# find and delete all lingering .pyc files
+fd . -t f -e pyc | xargs -o trash 
+
+# find files only in the current directory 
+fd . -t f -d 1 
