@@ -5,3 +5,9 @@ fd . '/Applications' -e app -d 2 | peco
 
 # find application executables  
 fd . '/Applications' -t x -d 4 | peco
+
+# cd into unclean directory 
+cd $(gst --short | peco)
+
+# manage/navigate remote repository clones using ghq 
+cd ~/repos/$(ghq list | peco) 
