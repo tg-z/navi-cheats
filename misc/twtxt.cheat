@@ -1,0 +1,29 @@
+% tweet, twitter, decentralized
+
+# follow someone 
+twtxt follow <user>
+
+# check following 
+twtxt following
+
+# unfollow someone 
+twtxt unfollow <user>
+
+# tweet 
+twtxt tweet <"hi world">
+
+# view timeline
+twtxt timeline
+
+# view user feed 
+twtxt view <user> 
+
+# edit config
+twtxt config --edit
+
+# delete config file value
+twtxt config --remove twtxt.<value>
+
+# view a config value 
+twtxt config twtxt.nick 
+
