@@ -1,4 +1,25 @@
 % shell, web, html, browser
 
-; w3m [options] [file|URL]
+# startup on welcome page
+w3m -v
 
+# use bookmark file on startup
+w3m -B 
+
+# view a local html file 
+w3m <options> <file>
+
+# convert an html file to plain text with a defined line length 
+w3m -cols 79 <file> > plain-file.txt
+
+# display w3m in monochrome
+w3m -M <url> 
+
+# show version
+w3m --version
+
+
+
+$ file: fd . -t f -e html 
+$ options: 
+$ url: http://w3m.sourceforge.net
