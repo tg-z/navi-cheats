@@ -1,0 +1,5 @@
+% pandoc, cli, text
+
+# html <-> text
+pandoc -o output.html input.txt
+
