@@ -1,0 +1,46 @@
+Keybindings
+
+vi like keybindings are used in the project. Can be used commands like 4j - 4 lines down.
+
+For navigation arrow keys also can be used.
+Chats:
+
+    j,k: move up/down
+    J,K: move 10 chats up/down
+    g: go to top chat
+    l: open msgs of the chat
+    m: mute/unmute current chat
+    p: pin/unpin current chat
+    u: mark read/unread
+    r: read current chat
+    ?: show help
+
+Msgs:
+
+    j,k: move up/down
+    J,K: move 10 msgs up/down
+    G: move to the last msg (at the bottom)
+    l: if video, pics or audio then open app specified in mailcap file, for example:
+
+    # Images
+    image/png; qView "%s"
+    audio/*; mpv "%s"
+
+    if text, open in less (to view multiline msgs)
+    e: edit current msg
+    <space>: space can be used to select multiple msgs for deletion or forwarding
+    y: yank (copy) selected msgs with to internal buffer (for forwarding) and copy current msg text or path to file to clipboard
+    p: forward (paste) yanked (copied) msgs to current chat
+    dd: delete msg for everybody (multiple messages will be deleted if selected)
+    i or a: insert mode, type new message
+    I or A: open vim to write long msg and send
+    v: record and send voice message
+    r,R: reply to a current msg
+    sv: send video
+    sa: send audio
+    sp: send picture
+    sd: send document
+    o: open url present in message (if multiple urls, urlview will be opened)
+    ]: next chat
+    [: prev chat
+    ?: show help
