@@ -1,0 +1,5 @@
+% cli, network, duck, cyberduck
+
+# copy a local file to a server
+duck --copy <url> <url> # format
+duck --copy file:<filepath> sftp://<user>@<host>/<filepath>
