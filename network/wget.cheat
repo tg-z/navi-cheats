@@ -1,5 +1,10 @@
 % network, http 
 
-# download a file from the web
-wget -q <url> 
+# download a file from the web with minimal output
+wget <url> -q 
 
+# download regardless of certificate status
+wget <url> --no-check-certificate
+
+# make necessary dirs for website recursion
+wget <url> -I -x -q -E -r
