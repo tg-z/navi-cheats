@@ -4,15 +4,15 @@
 ssh -A <user>@<server>
 
 # login to a server with a key
-ssh -i <sshkey> <user>@<server>
+ssh -i <key> <user>@<server>
 
 # login to a server with a port
 ssh -p <port> <user>@<server>
 
 # login to a server with a key and port
-ssh -i <sshkey> -p <port> <user>@<server>
+ssh -i <key> -p <port> <user>@<server>
 
-# check whether you're running multiple versions of ssh-agent 
+# check whether you're running multiple versions of ssh-agent
 ps 
 
 # check if ssh-agent is running
@@ -36,7 +36,7 @@ ssh -T git@bitbucket.org
 # show details about ssh connection
 ssh -v git@bitbucket.org
 
-
-$ user : echo -e "$(whoami)\nroot"
-$ sshkey : find ~/.ssh | grep -v known_hosts | grep -v config
-$ server : cat /etc/hosts | cut -f2 -d' '
+$ user : cat ~/.ssh/config | grep User | awk '{print $2}' | uniq
+$ key : cat ~/.ssh/config | grep Id | awk '{print $2}' | uniq
+$ server : cat ~/.ssh/config | grep Host | awk '{print $2}'
+$ port : cat ~/.ssh/config | grep Port | awk '{print $2}'
