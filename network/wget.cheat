@@ -1,10 +1,12 @@
 % network, http 
 
 # download a file from the web with minimal output
-wget <url> -q 
+wget "<url>" -q 
 
 # download regardless of certificate status
-wget <url> --no-check-certificate
+wget "<url>" --no-check-certificate
 
 # make necessary dirs for website recursion
-wget <url> -I -x -q -E -r
+wget "<url>" -I -x -q -E -r
+
+$ url : pbpaste
